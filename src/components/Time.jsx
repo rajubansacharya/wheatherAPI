@@ -1,11 +1,13 @@
+import { useState } from "react";
 
 
 function Time() {
 
+    const[presentDate , setPresentDate] = useState(new Date());
 
     return(
         <>
-        <p>2025/1/1</p>
+        <p>{presentDate.toLocaleDateString()}</p>
         </>
     );
 }
